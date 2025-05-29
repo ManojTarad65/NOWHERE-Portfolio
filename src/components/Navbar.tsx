@@ -14,7 +14,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'services', label: 'Services' },
     { id: 'projects', label: 'Projects' },
+    { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -35,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent cursor-hover">
             Portfolio
           </div>
 
@@ -45,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
               <button
                 key={item.id}
                 onClick={() => onNavigate(item.id)}
-                className={`relative text-lg font-medium transition-colors duration-300 hover:text-blue-400 ${
+                className={`relative text-lg font-medium transition-colors duration-300 hover:text-blue-400 cursor-hover ${
                   activeSection === item.id ? 'text-blue-400' : 'text-gray-300'
                 }`}
               >
@@ -59,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white cursor-hover"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -76,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
                   onNavigate(item.id);
                   setIsMobileMenuOpen(false);
                 }}
-                className={`block w-full text-left py-2 text-lg font-medium transition-colors duration-300 hover:text-blue-400 ${
+                className={`block w-full text-left py-2 text-lg font-medium transition-colors duration-300 hover:text-blue-400 cursor-hover ${
                   activeSection === item.id ? 'text-blue-400' : 'text-gray-300'
                 }`}
               >
