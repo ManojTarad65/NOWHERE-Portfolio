@@ -7,7 +7,6 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Services from '@/components/Services';
 import Projects from '@/components/Projects';
-import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollIndicator from '@/components/ScrollIndicator';
@@ -19,7 +18,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'services', 'projects', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'skills', 'services', 'projects', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -65,7 +64,6 @@ const Index = () => {
       <Skills />
       <Services />
       <Projects />
-      <Testimonials />
       <Contact />
       <Footer />
     </div>
