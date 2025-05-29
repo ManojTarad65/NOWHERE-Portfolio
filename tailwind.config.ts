@@ -19,6 +19,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Playfair Display', 'serif'],
+				'mono': ['JetBrains Mono', 'monospace'],
+				'heading': ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -123,6 +129,22 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px rgba(59, 130, 246, 0.8)'
+					}
+				},
+				'text-shimmer': {
+					'0%': {
+						backgroundPosition: '-200% center'
+					},
+					'100%': {
+						backgroundPosition: '200% center'
+					}
 				}
 			},
 			animation: {
@@ -131,7 +153,9 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-up': 'slide-up 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'text-shimmer': 'text-shimmer 3s ease-in-out infinite'
 			}
 		}
 	},
@@ -139,13 +163,19 @@ export default {
 		require("tailwindcss-animate"),
 		function({ addUtilities }: any) {
 			addUtilities({
-				'.cursor-hover': {
-					'cursor': 'none',
+				'.text-gradient': {
+					background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899)',
+					backgroundSize: '200% 100%',
+					WebkitBackgroundClip: 'text',
+					WebkitTextFillColor: 'transparent',
+					backgroundClip: 'text',
+					animation: 'text-shimmer 3s ease-in-out infinite',
 				},
-				'.skill-bar.animate-fill': {
-					'transform': 'scaleX(1)',
-					'width': 'var(--target-width)',
-				}
+				'.glass-effect': {
+					backgroundColor: 'rgba(255, 255, 255, 0.05)',
+					backdropFilter: 'blur(10px)',
+					border: '1px solid rgba(255, 255, 255, 0.1)',
+				},
 			});
 		}
 	],
