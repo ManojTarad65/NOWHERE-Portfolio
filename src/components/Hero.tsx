@@ -43,12 +43,12 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="block text-white mb-2">Hello, I'm</span>
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Your Name
+             Manoj Tarad
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Full Stack Developer & UI/UX Designer passionate about creating 
+           Full Stack Developer & UI/UX Designer passionate about creating 
             <span className="text-blue-400"> amazing digital experiences</span>
           </p>
           
@@ -68,13 +68,13 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           </div>
 
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="https://github.com/manojtarad65" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Github size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="https://linkedin.com/in/manoj-tarad-0b779625a" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="mailto:manojtarad@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Mail size={24} />
             </a>
           </div>

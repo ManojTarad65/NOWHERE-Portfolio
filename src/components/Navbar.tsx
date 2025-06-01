@@ -30,8 +30,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
 
   const handleCVDownload = () => {
     // This would typically link to your actual CV file
+    const cvUrl = '/Manoj Tarad Resume.pdf';
     // For now, it shows an alert - replace with actual CV download
-    alert('CV download feature - Please upload your CV file to the public folder and update this function');
+    window.open(cvUrl, '_blank');
+
   };
 
   return (
@@ -46,15 +48,15 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
           <div className="flex items-center space-x-3">
             <div className="relative">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-600 to-pink-500 rounded-xl flex items-center justify-center transform rotate-3 hover:rotate-6 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">MT</span>
+                <span className="text-white font-bold text-xl">My</span>
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-600 to-pink-500 rounded-xl opacity-20 blur-md"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Manoj Tarad
+               Portfolio
               </h1>
-              <p className="text-xs text-gray-400 font-medium">Web Developer</p>
+              <p className="text-xs text-gray-400 font-medium"></p>
             </div>
           </div>
 
@@ -84,6 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
             {/* CV Download Button */}
             <button
               onClick={handleCVDownload}
+
               className="ml-4 px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2 group"
             >
               <Download className="w-4 h-4 group-hover:animate-bounce" />

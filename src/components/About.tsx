@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Code, Palette, Smartphone, Globe } from 'lucide-react';
+import { Code, Palette, Globe,  } from 'lucide-react';
+import { FaGithubAlt } from  "react-icons/fa";
 
 const About = () => {
   const skills = [
@@ -13,19 +14,19 @@ const About = () => {
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Backend Development",
-      description: "Node.js, Python, PostgreSQL, APIs",
+      description: "Node.js, APIs ,Express.js, MongoDB, Next.js, Firebase",
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Palette className="w-8 h-8" />,
       title: "UI/UX Design",
-      description: "Figma, Adobe XD, User Research, Prototyping",
+      description: "Figma, Canva",
       color: "from-purple-500 to-pink-500"
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Development",
-      description: "React Native, Flutter, iOS, Android",
+      icon: <FaGithubAlt className="w-8 h-8" />,
+      title: "Version Control",
+      description: "Git, GitHub",
       color: "from-orange-500 to-red-500"
     }
   ];
@@ -38,8 +39,9 @@ const About = () => {
             About <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate developer with 3+ years of experience creating digital solutions 
-            that make a difference. I love turning complex problems into simple, beautiful designs.
+          I'm a Computer Science student with hands-on experience in frontend web development. Proficient in JavaScript, TypeScript, React, Next.js, Tailwind CSS, and Node.js, I'm
+passionate about creating clean, user-friendly web applications. While I have a strong
+foundation in frontend development, I'm actively learning backend technologies.
           </p>
         </div>
 
@@ -57,7 +59,7 @@ const About = () => {
               or contributing to open-source projects.
             </p>
             <div className="flex flex-wrap gap-3">
-              {['JavaScript', 'React', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL'].map((tech) => (
+              {['JavaScript', 'React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Next.js', 'Express.js', 'MongoDB', 'Git', 'GitHub', 'Figma', 'Firebase'].map((tech) => (
                 <span key={tech} className="px-3 py-1 bg-gray-800 text-blue-400 rounded-lg text-sm">
                   {tech}
                 </span>
@@ -69,8 +71,8 @@ const About = () => {
             <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-full flex items-center justify-center">
               <div className="w-64 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full border border-gray-700 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-white mb-2">3+</div>
-                  <div className="text-gray-400">Years Experience</div>
+                  
+                <img src="/myPic.jpeg" alt="" className="w-60 h-60 rounded-full"/>
                 </div>
               </div>
             </div>
