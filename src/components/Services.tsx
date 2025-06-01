@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Code, Palette, Smartphone, Globe, Database, Zap } from 'lucide-react';
+import { Code, Palette, Database, Zap } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -15,30 +15,18 @@ const Services = () => {
       icon: <Database className="w-8 h-8" />,
       title: "Backend Development",
       description: "Building robust server-side applications with Node.js, databases, and cloud services.",
-      features: ["Node.js & Express", "PostgreSQL", "MongoDB", "AWS & Supabase"],
+      features: ["Node.js & Express", "PostgreSQL", "MongoDB", "Firebase"],
       color: "from-green-500 to-emerald-500"
     },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Development",
-      description: "Cross-platform mobile apps that deliver native performance and user experience.",
-      features: ["React Native", "Flutter", "iOS & Android", "App Store Deployment"],
-      color: "from-purple-500 to-pink-500"
-    },
+    
     {
       icon: <Palette className="w-8 h-8" />,
       title: "UI/UX Design",
       description: "Designing intuitive interfaces that users love, from wireframes to pixel-perfect designs.",
-      features: ["Figma & Adobe XD", "User Research", "Prototyping", "Design Systems"],
+      features: ["Figma & Canva", "User Research", "Prototyping", "Design Systems"],
       color: "from-orange-500 to-red-500"
     },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Web3 Development",
-      description: "Building decentralized applications and smart contracts for the future of the web.",
-      features: ["Ethereum & Solidity", "DeFi Protocols", "NFT Marketplaces", "Web3 Integration"],
-      color: "from-yellow-500 to-orange-500"
-    },
+    
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Performance Optimization",

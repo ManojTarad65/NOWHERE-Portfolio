@@ -5,34 +5,35 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "COOKARO",
+      
+      description: "",
+      image: "/Cookaro1.png",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Lovable","React"],
+      githubUrl: "https://github.com/manojtarad/recipe-generator-cookaro",
+      liveUrl: "https://recipe-generator-cookaro.vercel.app/"
+    },
+    {
+      title: "",
+      description: "",
+      image: "",
+      technologies: [""],
       githubUrl: "#",
       liveUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and advanced filtering options.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Socket.io", "PostgreSQL"],
+      title: "",
+      description: "",
+      image: "",
+      technologies: [""],
       githubUrl: "#",
       liveUrl: "#"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard with location-based forecasts, interactive maps, and historical weather data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Tailwind"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Social Media Analytics",
-      description: "An analytics dashboard for social media metrics with data visualization, automated reporting, and performance insights.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "D3.js", "Python", "FastAPI"],
+      title: "",
+      description: "",
+      image: "",
+      technologies: [""],
       githubUrl: "#",
       liveUrl: "#"
     }

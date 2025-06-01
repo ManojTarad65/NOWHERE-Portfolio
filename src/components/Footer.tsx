@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent mb-4">
-              Portfolio
+             Manoj Tarad
             </h3>
             <p className="text-gray-400 mb-4">
               Passionate developer creating amazing digital experiences with modern technologies and clean design.
@@ -42,15 +42,13 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><span className="text-gray-400">Web Development</span></li>
               <li><span className="text-gray-400">UI/UX Design</span></li>
-              <li><span className="text-gray-400">Mobile Apps</span></li>
-              <li><span className="text-gray-400">Consulting</span></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 text-red-500 mx-2" /> by Your Name © 2024
+            Made with <Heart className="w-4 h-4 text-red-500 mx-2" /> by Manoj Tarad © 2025
           </p>
         </div>
       </div>

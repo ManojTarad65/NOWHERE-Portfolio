@@ -8,6 +8,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
+ 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
@@ -17,7 +18,7 @@ const Contact = () => {
     
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    alert("Form submitted successfully!");
     console.log('Form submitted:', formData);
     setIsSubmitting(false);
     setFormData({ name: '', email: '', message: '' });
@@ -34,21 +35,21 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "your.email@example.com",
+      value: "manojtarad65@gmail.com",
       gradient: "from-blue-500 to-purple-600",
       delay: "0s"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 7877018453",
       gradient: "from-green-500 to-emerald-600",
       delay: "0.2s"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "New York, NY",
+      value: "Bikaner, Rajasthan",
       gradient: "from-purple-500 to-pink-600",
       delay: "0.4s"
     }
@@ -224,7 +225,7 @@ const Contact = () => {
                     </>
                   ) : (
                     <>
-                      <Send className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" />
+                      <Send className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" onClick={handleSubmit} />
                       Send Message
                     </>
                   )}
