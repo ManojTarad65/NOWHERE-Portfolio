@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "COOKARO",
       
-      description: "",
+      description: "This is a web application that helps users to generate recipes for their meals.",
       image: "/Cookaro3.png",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
       githubUrl: "https://github.com/manojtarad/recipe-generator-cookaro",
@@ -15,7 +15,7 @@ const Projects = () => {
     },
     {
       title: "Discover Your Perfect Bottle",
-      description: "",
+      description: "This is a web application that helps users to find the perfect bottle for their requirements.",
       image: "/Bottle.png",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
       githubUrl: "https://github.com/manojtarad/discover-your-perfect-bottle",
@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       title: "Weather App",
-      description: "",
+      description: "This is a web application that helps users to get the weather details of any city.",
       image: "/Weather2.png",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
       githubUrl: "https://github.com/manojtarad/weather-app",
@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       title: "Invoice Assistant",
-      description: "",
+      description: "This is a web application that helps users to generate invoices for their products. " + " Working on it...",
       image: "/invoice1.png",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
       githubUrl: "https://github.com/manojtarad/invoice-assistant",
