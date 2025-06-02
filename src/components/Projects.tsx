@@ -8,34 +8,34 @@ const Projects = () => {
       title: "COOKARO",
       
       description: "",
-      image: "/Cookaro1.png",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Lovable","React"],
+      image: "/Cookaro3.png",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
       githubUrl: "https://github.com/manojtarad/recipe-generator-cookaro",
       liveUrl: "https://recipe-generator-cookaro.vercel.app/"
     },
     {
-      title: "",
+      title: "Discover Your Perfect Bottle",
       description: "",
-      image: "",
-      technologies: [""],
-      githubUrl: "#",
-      liveUrl: "#"
+      image: "/Bottle.png",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
+      githubUrl: "https://github.com/manojtarad/discover-your-perfect-bottle",
+      liveUrl: "https://pixel-pour-ecommerce.vercel.app/"
     },
     {
-      title: "",
+      title: "Weather App",
       description: "",
-      image: "",
-      technologies: [""],
-      githubUrl: "#",
-      liveUrl: "#"
+      image: "/Weather2.png",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
+      githubUrl: "https://github.com/manojtarad/weather-app",
+      liveUrl: "https://weather-app-ten.vercel.app/"
     },
     {
-      title: "",
+      title: "Invoice Assistant",
       description: "",
-      image: "",
-      technologies: [""],
-      githubUrl: "#",
-      liveUrl: "#"
+      image: "/invoice1.png",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript","React"],
+      githubUrl: "https://github.com/manojtarad/invoice-assistant",
+      liveUrl: "https://invoice-assistant.vercel.app/"
     }
   ];
 
@@ -58,7 +58,7 @@ const Projects = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

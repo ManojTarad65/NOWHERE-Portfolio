@@ -15,13 +15,13 @@ const Footer = () => {
               Passionate developer creating amazing digital experiences with modern technologies and clean design.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+              <a href="https://github.com/manojtarad65" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/manoj-tarad-0b779625a/" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+              <a href="mailto:manojtarad65@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 <Mail size={24} />
               </a>
             </div>
