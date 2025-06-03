@@ -40,13 +40,6 @@ const Contact = () => {
       delay: "0s"
     },
     {
-      icon: Phone,
-      title: "Phone",
-      value: "+91 7877018453",
-      gradient: "from-green-500 to-emerald-600",
-      delay: "0.2s"
-    },
-    {
       icon: MapPin,
       title: "Location",
       value: "Bikaner, Rajasthan",
