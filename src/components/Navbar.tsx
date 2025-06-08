@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
 
   const handleCVDownload = () => {
     // This would typically link to your actual CV file
-    const cvUrl = '/Manoj Tarad Resume.pdf';
+    const cvUrl = '/Manoj Tarad CV.pdf';
     // For now, it shows an alert - replace with actual CV download
     window.open(cvUrl, '_blank');
 
